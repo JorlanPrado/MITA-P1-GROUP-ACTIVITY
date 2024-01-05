@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>User Profile</title>
+  <!-- Your custom styles or additional CSS links can go here -->
+</head>
+
+
+<style>
+    .custom-jumbotron {
+      background-color: #F9E79B;
+    }
+  
+    .custom-text-color-header {
+      color: #ffffff;
+    }
+  
+    .custom-text-color {
+      color: #ac812c;
+    }
+  
+    .custom-header {
+      background-color: #9DB53B;
+    }
+  
+    .custom-backgroud-navbar {
+      background-color: #bdb76b;
+    }
+  
+    .custom-footer-background {
+      background-color: #bdb76b;
+    }
+  
+    @media screen and (max-width: 600px) {
+        
+      .navbar-brand h2 {
+        font-size: 1.5rem;
+      }
+  
+    
+  
+      .navbar-nav {
+        display: flex;
+      }
+  
+      .navbar-toggler {
+        background-color:#bdb76b;
+      }
+  
+      
+    }
+  
+    @media screen and (min-width: 601px) and (max-width: 992px) {
+        .navbar-brand h2 {
+            font-size: 2rem;
+          }
+        
+        
+    }
+  
+    @media screen and (min-width: 993px) {
+      .navbar-brand h2 {
+        font-size: 3rem;
+      }
+
+
+    }
+
+    .card {
+        border: none;
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 1000px; /* Adjust the width as needed */
+        margin: auto; /* Center the card horizontally */
+        background-color: #9DB53B;
+    }
+    
+    .card:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background-color: #bdb76b;
+        transform: scaleY(1);
+        transition: all 0.5s;
+        transform-origin: bottom;
+    }
+    
+    .card:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background-color:white;
+        transform: scaleY(0);
+        transition: all 0.5s;
+        transform-origin: bottom;
+    }
+    
+    .card:hover::after {
+        transform: scaleY(1);
+    }
+    
+    .fonts {
+        font-size: 14px;
+    }
+    
+    .social-list {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .social-list li {
+        padding: 15px;
+        color: #9DB53B;
+        font-size: 24px;
+    }
+    
+    
+  </style>
+  
+  <body class="custom-jumbotron">
+  
+    <nav class="navbar navbar-expand-lg navbar-light custom-backgroud-navbar">
+      <a class="navbar-brand" style="color: white; font-size: 30px"><b>Profile</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="login.html" style="color: white; font-size:20px"><b>Log In</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html" style="color: white; font-size:20px"><b>Dashboard</b></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-7">
+                <div class="card p-3 py-4 mx-auto">
+                    <div class="text-center">
+                        <img src="ako.png" width="250" class="rounded-circle"> <!-- Adjust image size -->
+                    </div>
+                    <div class="text-center mt-3" style="color:white;">
+                        <h1 class="mt-2 mb-0">Jorlan Prado</h1>
+                        <span> Web Developer </span>
+                    
+                    
+                        <div class="px-4 mt-5">
+                            <h2> Description </h2>
+                            <p class="fonts"> I'm Jorlan Prado, a versatile professional experienced in both web development and software development. With a passion for creating innovative and efficient solutions, I specialize in crafting dynamic and responsive websites as well as developing robust software applications. My skill set includes a proficiency in various programming languages, a keen eye for design, and a commitment to delivering high-quality products </p>
+                        </div>
+
+                        <div class="px-4 mt-1">
+                            <h2> Work Experience</h2>
+                            <p class="fonts">Web Developer</p>
+                            <p class="fonts">Software Developer</p>
+                        </div>
+
+                        
+
+                
+                        
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mx-auto custom-footer-background footer-content" style="margin-top: 50px;">
+        <footer class="text-center text-lg-start text-white">
+            <div class="text-center p-3 custom-footer-text" style="width: 100%;">
+                © 2024 Copyright:
+                <a class="text-white" href="">MITA</a>
+            </div>
+        </footer>
+    </div>
+  
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
